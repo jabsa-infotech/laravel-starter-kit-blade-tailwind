@@ -14,12 +14,26 @@
 
 - Done - Install Laravel
 - Done - Configure phpmyadmin to view DB
+- Done - Port configuration in env
 - Install Breeze
 - Install Sptie laravel permissions
 - Make UI to manage roles and permissions
 - A simple Landing page
 - Authentication pages
 - A simple admin UI
+
+## Uses
+
+### Configure ports in your env like this
+
+Helps when you have already running something on default ports
+
+``` .env
+APP_PORT=80 # replace with port number
+FORWARD_DB_PORT=3306
+FORWARD_PHPMYADMIN_PORT=8081
+VITE_PORT=5174
+```
 
 ## Contributing
 
