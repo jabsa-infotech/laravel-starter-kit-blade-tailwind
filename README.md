@@ -15,8 +15,8 @@
 - Done - Install Laravel
 - Done - Configure phpmyadmin to view DB
 - Done - Port configuration in env
-- Install Breeze
-- Install Sptie laravel permissions
+- Done - Install Breeze
+- Done - Install Sptie laravel permissions
 - Make UI to manage roles and permissions
 - A simple Landing page
 - Authentication pages
