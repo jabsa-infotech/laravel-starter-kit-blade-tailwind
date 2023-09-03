@@ -17,6 +17,7 @@
 - Done - Port configuration in env
 - Done - Install Breeze
 - Done - Install Sptie laravel permissions
+- Done - Create RoleSeeder and UserSeeder
 - Make UI to manage roles and permissions
 - A simple Landing page
 - Authentication pages
