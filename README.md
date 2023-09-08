@@ -1,6 +1,6 @@
-## Laravel Starter Kit
+# Laravel Starter Kit
 
-# Early release - Still work in progress
+## Early release - Still work in progress
 
 ## If you want to support this project, do contribute via PR
 
@@ -18,12 +18,22 @@
 - Done - Install Breeze
 - Done - Install Sptie laravel permissions
 - Done - Create RoleSeeder and UserSeeder
-- Make UI to manage roles and permissions
+- Done - Make UI to manage roles and permissions
 - A simple Landing page
 - Authentication pages
 - A simple admin UI
+- Update setup and uses instructions in readme
 
 ## Uses
+
+- Use this template and create a new repository
+- clone newly created repo and then run following commands one at a time
+
+``` bash
+cp .env.example .env
+```
+
+Make sure to update you database credentials and other variables
 
 ### Configure ports in your env like this
 
@@ -34,6 +44,29 @@ APP_PORT=80 # replace with port number
 FORWARD_DB_PORT=3306
 FORWARD_PHPMYADMIN_PORT=8081
 VITE_PORT=5174
+```
+
+and then
+
+``` bash
+docker run --rm -v $(pwd):/opt -w /opt laravelsail/php82-composer:latest composer install
+./vendor/bin/sail up -d
+./vendor/bin/sail artisan key:generate
+./vendor/bin/sail artisan storage:link
+./vendor/bin/sail artisan migrate:fresh --seed
+npm install
+npm run dev
+ ```
+
+## Following credentials will be available for you to work with
+
+``` bash
+Admin:
+    admin@admin.com
+    password
+User:
+    user@user.com
+    password
 ```
 
 ## Contributing
